@@ -36,7 +36,7 @@ body {
   align-items: center;
 }
 .movie-card {
-  height: 65vh;
+  height: 30vh;
   width: 20vw;
   margin: 0 auto;
   position: relative;
@@ -52,6 +52,9 @@ body {
   background-position: center;
   z-index: 3;
   transition: all 0.3s;
+  background-color: peru;
+  display: flex;
+  align-items: center;
 }
 .poster {
   width: 100%;
@@ -74,9 +77,10 @@ body {
   height: 100%;
 }
 .movie-card-header {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   text-transform: uppercase;
   margin: 1rem auto;
+  padding: 1%;
 
   text-align: center;
 }
