@@ -49,7 +49,7 @@ const listen = function () {
   const searchParams = DOMSelectors.searchArea.value;
   const searchQuery = async function () {
     try {
-        const response = await fetch(`https://holidayapi.com/v1/search/holidays?pretty&key=b2e5f5f9-a41f-4466-833d-a09cd17f4fd7&country=US&year=2020&query=${searchParams}`);
+        const response = await fetch(`https://holidayapi.com/v1/holidays?pretty&key=b2e5f5f9-a41f-4466-833d-a09cd17f4fd7&country=US&year=2020&search&query=${searchParams}`);
         const data = await response.json();
         console.log(data.holidays);
         data.holidays.forEach((holiday) => {
