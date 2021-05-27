@@ -1,3 +1,4 @@
+@import "search.scss";
 $font-main: "Asap", sans-serif;
 $font-second: "Josefin Slab", serif;
 html,
@@ -25,7 +26,7 @@ body {
   text-align: center;
   font-size: 3.8rem;
 }
-.movie-grid {
+.holiday-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -35,20 +36,19 @@ body {
   padding: 3rem auto;
   align-items: center;
 }
-.movie-card {
+.holiday-card {
   height: 30vh;
   width: 20vw;
   margin: 0 auto;
   position: relative;
   margin: 2rem auto;
 }
-.movie-card-front {
+.holiday-card-front {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
   background-position: center;
   z-index: 3;
   transition: all 0.3s;
@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.movie-card-back {
+.holiday-card-back {
   transition: all 0.3s;
   position: absolute;
   top: 0;
@@ -76,7 +76,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.movie-card-header {
+.holiday-card-header {
   font-size: 2.1rem;
   text-transform: uppercase;
   margin: 1rem auto;
@@ -84,34 +84,22 @@ body {
 
   text-align: center;
 }
-.score-box,
-.release-box {
+.info-box,
+.date-box {
   text-align: center;
 }
 
-.movie-genres {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.movie-genre {
-  list-style: none;
-}
-.user-score {
+.public-info {
   font-size: 2rem;
 }
-.release-date {
+.date {
   font-size: 2rem;
 }
 
-.movie-card:hover .movie-card-front {
+.holiday-card:hover .holiday-card-front {
   z-index: 1;
 }
-.movie-card:hover .movie-card-back {
+.holiday-card:hover .holiday-card-back {
   z-index: 3;
   display: flex;
 }
